@@ -109,5 +109,4 @@ function randomSymbolPattern() {
 }
 
 
-
 export { randomSymbolPattern };
