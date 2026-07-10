@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slackey&family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-page">
+      <h1 id="title">Quizzy</h1>
+      <p id="bio">Welcome to the Exam.</p>
+      <button type="button" id="start" class="start">Start</button>
+      <div id="selector">
+        <select id="category">
+          <option disabled selected value="">Category</option>
+          <option value="general">General</option>
+          <option value="movies">Movies</option>
+          <option value="sports">Sports</option>
+          <option value="video-games">Video Games</option>
+          <option value="pop-culture">Pop Culture</option>
+        </select>
+        <select id="difficulty">
+          <option disabled selected value="">Difficulty</option>
+          <option value="general">Easy</option>
+          <option value="movies">Medium</option>
+          <option value="sports">Hard</option>
+          <option value="video-games">Ultra Kill Mode</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="exam-page">
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box" id="modal-box">
+          <h1>Before You Begin</h1>
+            <ul>
+              <li>You cannot switch tabs or minimize the window during the exam</li>
+              <li>Each question has only one correct answer</li>
+              <li>The exam will auto-submit when the timer runs out</li>
+              <li>You cannot go back to a previous question once answered</li>
+              <li>Do not refresh the page during the exam</li>
+              <li>Make sure you have a stable internet connection before starting</li>
+            </ul>
+            <input type="checkbox" id="checkbox"> <label>Don't show this again.</label>
+            <button type="button" class="start" id="start-rule">Start</button>
+        </div>
+      </div>
+      <div id="timer" class="timer">3:00</div>
+      <div id="question-number" class="question-number">Question 1 out of 10</div>
+      <div id="question" class="question"></div>
+      <div id="options" class="options">
+        <button type="button" id="option-1">Option 1</button>
+        <button type="button" id="option-2">Option 2</button>
+        <button type="button" id="option-3">Option 3</button>
+        <button type="button" id="option-4">Option 4</button>
+      </div>
+      <button type="button" id="next-btn" class="start">Next</button>
+    </div>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

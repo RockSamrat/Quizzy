@@ -1,0 +1,126 @@
+@keyframes floating{
+  0% {
+    transform: translateY(0) translateX(0) rotate(-10deg);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-20px) translateX(-15px) rotate(10deg);
+    opacity: 0.25;
+  }
+}
+
+* {
+    user-select: none;
+    font-family: "ZCOOL KuaiLe", sans-serif;
+}
+
+body {
+  background-color: #1a1a2e;
+  margin: 0;
+  padding: 0;
+}
+
+#main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#selector {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.start {
+  margin-bottom: 20px;
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: #7d75ff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+select {
+  background-color: #2a2a4e;
+  border-radius: 25px;
+  border: 1px solid #6c63ff;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+select:hover {
+  background-color: #7d75ff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+#title {
+  color: #ff6b6b;
+  margin-bottom: 60px;
+  font-size: 120px;
+  font-family: "Slackey", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#bio {
+  color: #a0a0c0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.floating-symbol{
+    position: absolute;
+    opacity: 0.15;
+    font-size: 40px;
+    user-select: none;
+    animation: floating 3s ease-in-out infinite alternate
+}
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box{
+  background-color: #2a2a4e;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  min-width: 650px;
+  text-align: center;
+  list-style: none;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-box ul{
+  padding: 0px;
+}
