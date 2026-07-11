@@ -54,9 +54,10 @@ nextButton.addEventListener("click", () => {
     loadQuestion(shuffledQuestions);
   }
 });
+
  optionButtons.forEach((button, index) => {
     button.addEventListener('click', () =>{
-        userAnswers.push(index);
+        userAnswers[currentIndex] = index;
         console.log(userAnswers)
     })
 })
@@ -80,5 +81,7 @@ function submitExam(){
         }
     }
     console.log(score)
+    console.log(userAnswers)
+    console.log(shuffledQuestions.map(q => q.answer))
 }
 randomSymbolPattern();
