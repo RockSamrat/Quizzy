@@ -15,6 +15,8 @@ const nextButton = document.getElementById("next-btn");
 const optionButtons = document.querySelectorAll(".option-btn");
 const resultPage = document.getElementById("result-page");
 const timer = document.getElementById("timer");
+const restart = document.getElementById("restart");
+const finalScore = document.getElementById("final-score");
 let currentIndex = 0;
 let shuffledQuestions = [];
 let userAnswers = [];
@@ -39,9 +41,8 @@ function submitExam() {
       score++;
     }
   }
-
   clearInterval(timeInterval);
-
+  finalScore.textContent = `You scored ${score} out of ${shuffledQuestions.length}.`
   console.log(score);
   console.log(userAnswers);
   console.log(shuffledQuestions.map((q) => q.answer));
@@ -107,6 +108,17 @@ optionButtons.forEach((button, index) => {
     button.classList.add("choosen-btn");
     console.log(userAnswers);
   });
+});
+
+restart.addEventListener("click", () => {
+  resultPage.style.display = "none";
+  mainPage.style.display = "flex";
+  currentIndex = 0;
+  userAnswers = [];
+  timeleft = 180;
+  shuffledQuestions = [];
+  clearInterval(timeInterval);
+  optionButtons.forEach(btn => btn.classList.remove("choosen-btn"))
 });
 
 randomSymbolPattern();

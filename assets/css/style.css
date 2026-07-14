@@ -39,6 +39,10 @@ body {
 
 #result-page{
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 
@@ -86,7 +90,7 @@ select:hover {
   transition: all 0.2s ease;
 }
 
-#title {
+#title, #result {
   color: #ff6b6b;
   margin-bottom: 60px;
   font-size: 120px;
@@ -109,7 +113,8 @@ select:hover {
     opacity: 0.15;
     font-size: 40px;
     user-select: none;
-    animation: floating 3s ease-in-out infinite alternate
+    animation: floating 3s ease-in-out infinite alternate;
+    pointer-events: none;
 }
 
 .modal-overlay{
@@ -150,7 +155,7 @@ select:hover {
   color: #a0a0c0 ;
 }
 
-.question{
+.question, #final-score{
   margin-bottom: 20px;
   font-size: 24px;
 }
@@ -175,4 +180,24 @@ select:hover {
   background-color:chartreuse;
   border: none;
   border-radius: 20px;
+}
+
+#restart{
+margin-bottom: 20px;
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#restart:hover {
+  background-color: #7d75ff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
