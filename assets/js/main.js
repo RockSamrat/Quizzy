@@ -14,9 +14,12 @@ const optionFour = document.getElementById("option-4");
 const nextButton = document.getElementById("next-btn");
 const optionButtons = document.querySelectorAll(".option-btn");
 const resultPage = document.getElementById("result-page");
+const timer = document.getElementById("timer");
 let currentIndex = 0;
 let shuffledQuestions = [];
 let userAnswers = [];
+let timeleft = 180;
+let timeInterval = null;
 
 function loadQuestion(shuffledQuestions) {
   const currentQuestion = shuffledQuestions[currentIndex];
@@ -41,6 +44,18 @@ function submitExam() {
   console.log(shuffledQuestions.map((q) => q.answer));
 }
 
+function startTimer() {
+  setInterval(() => {
+    timeleft -= 1;
+    let minutes = Math.floor(timeleft / 60);
+    let seconds = timeleft % 60;
+    timer.textContent = `${minutes}:${seconds}`;
+    if (timeleft === 0){
+      submitExam();
+    }
+  }, 1000)
+}
+
 startButtonModal.addEventListener("click", () => {
   const checked = document.getElementById("checkbox").checked;
   if (checked) {
@@ -59,6 +74,7 @@ startButtonMain.addEventListener("click", () => {
   );
   shuffledQuestions = filteredQuestions.sort(() => Math.random() - 0.5);
   loadQuestion(shuffledQuestions);
+  startTimer();
 
   if (localStorage.getItem("skipModal")) {
     examPage.style.display = "flex";
