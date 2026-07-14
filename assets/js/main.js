@@ -39,21 +39,25 @@ function submitExam() {
       score++;
     }
   }
+
+  clearInterval(timeInterval);
+
   console.log(score);
   console.log(userAnswers);
   console.log(shuffledQuestions.map((q) => q.answer));
 }
 
 function startTimer() {
-  setInterval(() => {
+  timeInterval = setInterval(() => {
     timeleft -= 1;
     let minutes = Math.floor(timeleft / 60);
     let seconds = timeleft % 60;
+    seconds = String(seconds).padStart(2, "0");
     timer.textContent = `${minutes}:${seconds}`;
-    if (timeleft === 0){
+    if (timeleft === 0) {
       submitExam();
     }
-  }, 1000)
+  }, 1000);
 }
 
 startButtonModal.addEventListener("click", () => {
@@ -63,6 +67,7 @@ startButtonModal.addEventListener("click", () => {
   }
   modalPage.style.display = "none";
   examPage.style.display = "flex";
+  startTimer();
 });
 
 startButtonMain.addEventListener("click", () => {
@@ -74,11 +79,11 @@ startButtonMain.addEventListener("click", () => {
   );
   shuffledQuestions = filteredQuestions.sort(() => Math.random() - 0.5);
   loadQuestion(shuffledQuestions);
-  startTimer();
 
   if (localStorage.getItem("skipModal")) {
     examPage.style.display = "flex";
     mainPage.style.display = "none";
+    startTimer();
   } else {
     mainPage.style.display = "none";
     modalPage.style.display = "flex";
@@ -92,13 +97,13 @@ nextButton.addEventListener("click", () => {
     currentIndex++;
     loadQuestion(shuffledQuestions);
   }
-  optionButtons.forEach(btn => btn.classList.remove("choosen-btn"));
+  optionButtons.forEach((btn) => btn.classList.remove("choosen-btn"));
 });
 
 optionButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
     userAnswers[currentIndex] = index;
-    optionButtons.forEach(btn => btn.classList.remove("choosen-btn"));
+    optionButtons.forEach((btn) => btn.classList.remove("choosen-btn"));
     button.classList.add("choosen-btn");
     console.log(userAnswers);
   });
