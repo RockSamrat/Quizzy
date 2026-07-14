@@ -18,6 +18,29 @@ let currentIndex = 0;
 let shuffledQuestions = [];
 let userAnswers = [];
 
+function loadQuestion(shuffledQuestions) {
+  const currentQuestion = shuffledQuestions[currentIndex];
+  question.textContent = currentQuestion.question;
+  optionOne.textContent = currentQuestion.options[0];
+  optionTwo.textContent = currentQuestion.options[1];
+  optionThree.textContent = currentQuestion.options[2];
+  optionFour.textContent = currentQuestion.options[3];
+}
+
+function submitExam() {
+  examPage.style.display = "none";
+  resultPage.style.display = "flex";
+  let score = 0;
+  for (let i = 0; i < shuffledQuestions.length; i++) {
+    if (shuffledQuestions[i].answer === userAnswers[i]) {
+      score++;
+    }
+  }
+  console.log(score);
+  console.log(userAnswers);
+  console.log(shuffledQuestions.map((q) => q.answer));
+}
+
 startButtonModal.addEventListener("click", () => {
   const checked = document.getElementById("checkbox").checked;
   if (checked) {
@@ -53,35 +76,16 @@ nextButton.addEventListener("click", () => {
     currentIndex++;
     loadQuestion(shuffledQuestions);
   }
+  optionButtons.forEach(btn => btn.classList.remove("choosen-btn"));
 });
 
- optionButtons.forEach((button, index) => {
-    button.addEventListener('click', () =>{
-        userAnswers[currentIndex] = index;
-        console.log(userAnswers)
-    })
-})
+optionButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    userAnswers[currentIndex] = index;
+    optionButtons.forEach(btn => btn.classList.remove("choosen-btn"));
+    button.classList.add("choosen-btn");
+    console.log(userAnswers);
+  });
+});
 
-function loadQuestion(shuffledQuestions) {
-  const currentQuestion = shuffledQuestions[currentIndex];
-  question.textContent = currentQuestion.question;
-  optionOne.textContent = currentQuestion.options[0];
-  optionTwo.textContent = currentQuestion.options[1];
-  optionThree.textContent = currentQuestion.options[2];
-  optionFour.textContent = currentQuestion.options[3];
-}
-
-function submitExam(){
-    examPage.style.display = "none";
-    resultPage.style.display = "flex";
-    let score = 0;
-    for(let i = 0; i < shuffledQuestions.length; i++){
-        if(shuffledQuestions[i].answer === userAnswers[i]){
-            score++;
-        }
-    }
-    console.log(score)
-    console.log(userAnswers)
-    console.log(shuffledQuestions.map(q => q.answer))
-}
 randomSymbolPattern();

@@ -41,11 +41,13 @@ body {
   display: none;
 }
 
+
 #selector {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
+  margin-right: 25px;
 }
 
 .start {
@@ -162,5 +164,15 @@ select:hover {
   margin-bottom: 10px;
   width: 500px;
   min-height: 30px;
+  border-radius: 20px;
   color: black;
+}
+
+.choosen-btn {
+    margin-bottom: 10px;
+  width: 500px;
+  min-height: 30px;
+  background-color:chartreuse;
+  border: none;
+  border-radius: 20px;
 }
