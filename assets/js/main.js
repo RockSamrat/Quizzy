@@ -17,11 +17,17 @@ const resultPage = document.getElementById("result-page");
 const timer = document.getElementById("timer");
 const restart = document.getElementById("restart");
 const finalScore = document.getElementById("final-score");
+const reviewList = document.getElementById("review-list");
+const reviewPrevious = document.getElementById("review-previous");
+const reviewNext = document.getElementById("review-next");
+const reviewPosition = document.getElementById("review-position");
 let currentIndex = 0;
+let currentReviewIndex = 0;
 let shuffledQuestions = [];
 let userAnswers = [];
 let timeleft = 180;
 let timeInterval = null;
+let tabSwitchCounter = 0;
 
 function loadQuestion(shuffledQuestions) {
   const currentQuestion = shuffledQuestions[currentIndex];
@@ -42,10 +48,72 @@ function submitExam() {
     }
   }
   clearInterval(timeInterval);
-  finalScore.textContent = `You scored ${score} out of ${shuffledQuestions.length}.`
-  console.log(score);
-  console.log(userAnswers);
-  console.log(shuffledQuestions.map((q) => q.answer));
+  finalScore.textContent = `You scored ${score} out of ${shuffledQuestions.length}.`;
+  currentReviewIndex = 0;
+  renderAnswerReview();
+}
+
+function renderAnswerReview() {
+  reviewList.replaceChildren();
+
+  const currentQuestion = shuffledQuestions[currentReviewIndex];
+  const questionCard = document.createElement("article");
+  questionCard.className = "review-question";
+
+  const questionTitle = document.createElement("h3");
+  questionTitle.textContent = `${currentReviewIndex + 1}. ${currentQuestion.question}`;
+  questionCard.appendChild(questionTitle);
+
+  const selectedAnswer = userAnswers[currentReviewIndex];
+  const optionList = document.createElement("div");
+  optionList.className = "review-options";
+
+  currentQuestion.options.forEach((option, optionIndex) => {
+    const optionElement = document.createElement("div");
+    optionElement.className = "review-option";
+
+    if (optionIndex === currentQuestion.answer) {
+      optionElement.classList.add("correct-answer");
+    }
+
+    if (
+      optionIndex === selectedAnswer &&
+      selectedAnswer !== currentQuestion.answer
+    ) {
+      optionElement.classList.add("incorrect-answer");
+    }
+
+    const optionLabel = document.createElement("span");
+    optionLabel.textContent = option;
+    optionElement.appendChild(optionLabel);
+
+    if (optionIndex === currentQuestion.answer) {
+      const correctLabel = document.createElement("span");
+      correctLabel.className = "answer-label";
+      correctLabel.textContent = "Correct";
+      optionElement.appendChild(correctLabel);
+    } else if (optionIndex === selectedAnswer) {
+      const incorrectLabel = document.createElement("span");
+      incorrectLabel.className = "answer-label";
+      incorrectLabel.textContent = "Your answer";
+      optionElement.appendChild(incorrectLabel);
+    }
+
+    optionList.appendChild(optionElement);
+  });
+
+  if (selectedAnswer === undefined) {
+    const unansweredLabel = document.createElement("p");
+    unansweredLabel.className = "unanswered-label";
+    unansweredLabel.textContent = "Not answered";
+    questionCard.appendChild(unansweredLabel);
+  }
+
+  questionCard.appendChild(optionList);
+  reviewList.appendChild(questionCard);
+  reviewPosition.textContent = `Question ${currentReviewIndex + 1} of ${shuffledQuestions.length}`;
+  reviewPrevious.disabled = currentReviewIndex === 0;
+  reviewNext.disabled = currentReviewIndex === shuffledQuestions.length - 1;
 }
 
 function startTimer() {
@@ -101,6 +169,20 @@ nextButton.addEventListener("click", () => {
   optionButtons.forEach((btn) => btn.classList.remove("choosen-btn"));
 });
 
+reviewPrevious.addEventListener("click", () => {
+  if (currentReviewIndex > 0) {
+    currentReviewIndex--;
+    renderAnswerReview();
+  }
+});
+
+reviewNext.addEventListener("click", () => {
+  if (currentReviewIndex < shuffledQuestions.length - 1) {
+    currentReviewIndex++;
+    renderAnswerReview();
+  }
+});
+
 optionButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
     userAnswers[currentIndex] = index;
@@ -114,11 +196,31 @@ restart.addEventListener("click", () => {
   resultPage.style.display = "none";
   mainPage.style.display = "flex";
   currentIndex = 0;
+  currentReviewIndex = 0;
+  1;
   userAnswers = [];
   timeleft = 180;
   shuffledQuestions = [];
+  tabSwitchCounter = 0;
   clearInterval(timeInterval);
-  optionButtons.forEach(btn => btn.classList.remove("choosen-btn"))
+  optionButtons.forEach((btn) => btn.classList.remove("choosen-btn"));
+});
+
+document.addEventListener("visibilitychange", () => {
+  if (examPage.style.display === "flex") {
+    if (document.visibilityState === "hidden") {
+      if (tabSwitchCounter === 0) {
+        alert(
+          "You are not allowed to leave the page. Repetation will end the exam",
+        );
+      }
+      tabSwitchCounter++;
+    }
+    if (tabSwitchCounter >= 2) {
+      alert("Exam auto submitted.")
+      submitExam();
+    }
+  }
 });
 
 randomSymbolPattern();

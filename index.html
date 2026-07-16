@@ -70,6 +70,21 @@
     <div id="result-page">
       <h1 id="result">Result</h1>
       <p id="final-score"></p>
+      <section id="answer-review" aria-labelledby="answer-review-title">
+        <div class="review-heading">
+          <h2 id="answer-review-title">Answer Review</h2>
+          <div class="review-legend" aria-label="Answer color legend">
+            <span class="legend-item"><span class="legend-swatch correct-swatch"></span>Correct answer</span>
+            <span class="legend-item"><span class="legend-swatch incorrect-swatch"></span>Your incorrect answer</span>
+          </div>
+        </div>
+        <div id="review-list"></div>
+        <div class="review-navigation" aria-label="Answer review navigation">
+          <button type="button" id="review-previous" class="review-arrow" aria-label="Previous question">&#8592;</button>
+          <span id="review-position">Question 1 of 1</span>
+          <button type="button" id="review-next" class="review-arrow" aria-label="Next question">&#8594;</button>
+        </div>
+      </section>
       <button type="button" id="restart">Restart</button>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
