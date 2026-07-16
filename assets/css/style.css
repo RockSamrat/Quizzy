@@ -288,10 +288,20 @@ select:hover {
 }
 
 .unanswered-label {
-  margin: -4px 0 10px;
-  color: #a0a0c0;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: -2px 0 12px;
+  padding: 6px 10px;
+  border: 1px solid #d49a4a;
+  border-radius: 8px;
+  background-color: #493b2d;
+  color: #ffd58a;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .review-navigation {
