@@ -21,6 +21,7 @@ const reviewList = document.getElementById("review-list");
 const reviewPrevious = document.getElementById("review-previous");
 const reviewNext = document.getElementById("review-next");
 const reviewPosition = document.getElementById("review-position");
+const questionNumber = document.getElementById("question-number");
 let currentIndex = 0;
 let currentReviewIndex = 0;
 let shuffledQuestions = [];
@@ -28,6 +29,7 @@ let userAnswers = [];
 let timeleft = 180;
 let timeInterval = null;
 let tabSwitchCounter = 0;
+let Numberquestion = 1;
 
 function loadQuestion(shuffledQuestions) {
   const currentQuestion = shuffledQuestions[currentIndex];
@@ -164,7 +166,9 @@ nextButton.addEventListener("click", () => {
     submitExam();
   } else {
     currentIndex++;
+    Numberquestion++;
     loadQuestion(shuffledQuestions);
+    questionNumber.textContent = `Question ${Numberquestion} out of 10`
   }
   optionButtons.forEach((btn) => btn.classList.remove("choosen-btn"));
 });
