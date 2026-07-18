@@ -148,7 +148,7 @@ startButtonMain.addEventListener("click", () => {
     (item) =>
       item.difficulty === difficultyValue && item.category === categoryValue,
   );
-  shuffledQuestions = filteredQuestions.sort(() => Math.random() - 0.5);
+  shuffledQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 10);
   loadQuestion(shuffledQuestions);
 
   if (localStorage.getItem("skipModal")) {

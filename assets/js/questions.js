@@ -1,5 +1,7 @@
 const questions = [
-  // GENERAL - Easy
+  // ─── GENERAL ───────────────────────────────────────────────────────────────
+
+  // General - Easy
   { question: "What is the largest planet in our solar system?", options: ["Saturn", "Neptune", "Jupiter", "Uranus"], answer: 2, category: "general", difficulty: "easy" },
   { question: "What is the fastest land animal?", options: ["Lion", "Cheetah", "Horse", "Leopard"], answer: 1, category: "general", difficulty: "easy" },
   { question: "What is the largest ocean?", options: ["Atlantic", "Indian", "Arctic", "Pacific"], answer: 3, category: "general", difficulty: "easy" },
@@ -10,8 +12,18 @@ const questions = [
   { question: "What is the smallest planet in our solar system?", options: ["Mars", "Venus", "Mercury", "Pluto"], answer: 2, category: "general", difficulty: "easy" },
   { question: "How many players are on a standard soccer team?", options: ["9", "10", "11", "12"], answer: 2, category: "general", difficulty: "easy" },
   { question: "What is the most spoken language in the world?", options: ["English", "Spanish", "Hindi", "Mandarin"], answer: 3, category: "general", difficulty: "easy" },
+  { question: "How many colors are in a rainbow?", options: ["5", "6", "7", "8"], answer: 2, category: "general", difficulty: "easy" },
+  { question: "What is the capital of Japan?", options: ["Osaka", "Kyoto", "Tokyo", "Hiroshima"], answer: 2, category: "general", difficulty: "easy" },
+  { question: "How many legs does a spider have?", options: ["6", "8", "10", "12"], answer: 1, category: "general", difficulty: "easy" },
+  { question: "What is the largest continent?", options: ["Africa", "North America", "Europe", "Asia"], answer: 3, category: "general", difficulty: "easy" },
+  { question: "What gas do plants absorb from the air?", options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], answer: 2, category: "general", difficulty: "easy" },
+  { question: "How many days are in a week?", options: ["5", "6", "7", "8"], answer: 2, category: "general", difficulty: "easy" },
+  { question: "What is the tallest mountain in the world?", options: ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"], answer: 2, category: "general", difficulty: "easy" },
+  { question: "What animal is known as the King of the Jungle?", options: ["Tiger", "Elephant", "Gorilla", "Lion"], answer: 3, category: "general", difficulty: "easy" },
+  { question: "How many months are in a year?", options: ["10", "11", "12", "13"], answer: 2, category: "general", difficulty: "easy" },
+  { question: "What is the opposite of 'hot'?", options: ["Warm", "Cool", "Cold", "Freezing"], answer: 2, category: "general", difficulty: "easy" },
 
-  // GENERAL - Medium
+  // General - Medium
   { question: "What is the chemical symbol for gold?", options: ["Go", "Gd", "Au", "Ag"], answer: 2, category: "general", difficulty: "medium" },
   { question: "Who painted the Mona Lisa?", options: ["Michelangelo", "Raphael", "Da Vinci", "Picasso"], answer: 2, category: "general", difficulty: "medium" },
   { question: "What is the smallest country in the world?", options: ["Monaco", "San Marino", "Vatican City", "Liechtenstein"], answer: 2, category: "general", difficulty: "medium" },
@@ -22,8 +34,18 @@ const questions = [
   { question: "What is the most abundant gas in Earth's atmosphere?", options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], answer: 2, category: "general", difficulty: "medium" },
   { question: "What is the capital of Australia?", options: ["Sydney", "Melbourne", "Brisbane", "Canberra"], answer: 3, category: "general", difficulty: "medium" },
   { question: "How many teeth does an adult human have?", options: ["28", "30", "32", "34"], answer: 2, category: "general", difficulty: "medium" },
+  { question: "What is the currency of Japan?", options: ["Yuan", "Won", "Yen", "Ringgit"], answer: 2, category: "general", difficulty: "medium" },
+  { question: "How many planets are in our solar system?", options: ["7", "8", "9", "10"], answer: 1, category: "general", difficulty: "medium" },
+  { question: "What is the chemical symbol for water?", options: ["WO", "H2O", "HO2", "W2O"], answer: 1, category: "general", difficulty: "medium" },
+  { question: "Which country has the most natural lakes?", options: ["USA", "Russia", "Brazil", "Canada"], answer: 3, category: "general", difficulty: "medium" },
+  { question: "What is the largest desert in the world?", options: ["Sahara", "Gobi", "Arabian", "Antarctic"], answer: 3, category: "general", difficulty: "medium" },
+  { question: "How many sides does an octagon have?", options: ["6", "7", "8", "9"], answer: 2, category: "general", difficulty: "medium" },
+  { question: "What is the capital of Brazil?", options: ["Rio de Janeiro", "Sao Paulo", "Brasilia", "Salvador"], answer: 2, category: "general", difficulty: "medium" },
+  { question: "Which planet is closest to the Sun?", options: ["Venus", "Earth", "Mars", "Mercury"], answer: 3, category: "general", difficulty: "medium" },
+  { question: "What is the tallest animal in the world?", options: ["Elephant", "Giraffe", "Camel", "Ostrich"], answer: 1, category: "general", difficulty: "medium" },
+  { question: "How many time zones does Russia span?", options: ["9", "10", "11", "12"], answer: 2, category: "general", difficulty: "medium" },
 
-  // GENERAL - Hard
+  // General - Hard
   { question: "What is the speed of light in km/s?", options: ["200,000", "250,000", "300,000", "350,000"], answer: 2, category: "general", difficulty: "hard" },
   { question: "What is the atomic number of carbon?", options: ["4", "6", "8", "12"], answer: 1, category: "general", difficulty: "hard" },
   { question: "What is the most abundant element in the universe?", options: ["Helium", "Oxygen", "Hydrogen", "Carbon"], answer: 2, category: "general", difficulty: "hard" },
@@ -34,8 +56,20 @@ const questions = [
   { question: "What is the largest known star in the universe?", options: ["Betelgeuse", "UY Scuti", "VY Canis Majoris", "Antares"], answer: 1, category: "general", difficulty: "hard" },
   { question: "What is the capital of Bhutan?", options: ["Kathmandu", "Thimphu", "Dhaka", "Colombo"], answer: 1, category: "general", difficulty: "hard" },
   { question: "What is the name of the deepest point in the ocean?", options: ["Mariana Trench", "Puerto Rico Trench", "Java Trench", "Philippine Trench"], answer: 0, category: "general", difficulty: "hard" },
+  { question: "What is the half life of Carbon-14?", options: ["2,730 years", "5,730 years", "8,730 years", "11,460 years"], answer: 1, category: "general", difficulty: "hard" },
+  { question: "What is the name of the process by which plants make food?", options: ["Respiration", "Fermentation", "Photosynthesis", "Osmosis"], answer: 2, category: "general", difficulty: "hard" },
+  { question: "How many bones are in the human hand?", options: ["24", "27", "30", "32"], answer: 1, category: "general", difficulty: "hard" },
+  { question: "What is the chemical formula for table salt?", options: ["NaCl", "KCl", "MgSO4", "CaCO3"], answer: 0, category: "general", difficulty: "hard" },
+  { question: "What is the name of the largest moon of Saturn?", options: ["Enceladus", "Rhea", "Titan", "Iapetus"], answer: 2, category: "general", difficulty: "hard" },
+  { question: "What is the longest bone in the human body?", options: ["Tibia", "Humerus", "Femur", "Fibula"], answer: 2, category: "general", difficulty: "hard" },
+  { question: "What is the study of earthquakes called?", options: ["Volcanology", "Geology", "Seismology", "Tectonics"], answer: 2, category: "general", difficulty: "hard" },
+  { question: "Which element has the chemical symbol 'Fe'?", options: ["Fluorine", "Iron", "Francium", "Fermium"], answer: 1, category: "general", difficulty: "hard" },
+  { question: "What is the name of the galaxy closest to the Milky Way?", options: ["Triangulum", "Whirlpool", "Andromeda", "Sombrero"], answer: 2, category: "general", difficulty: "hard" },
+  { question: "How many chromosomes do humans have?", options: ["42", "44", "46", "48"], answer: 2, category: "general", difficulty: "hard" },
 
-  // MOVIES - Easy
+  // ─── MOVIES ────────────────────────────────────────────────────────────────
+
+  // Movies - Easy
   { question: "Who played Iron Man in the MCU?", options: ["Chris Evans", "Robert Downey Jr", "Chris Hemsworth", "Mark Ruffalo"], answer: 1, category: "movies", difficulty: "easy" },
   { question: "Complete the quote: 'To infinity and ___'", options: ["beyond", "forever", "the stars", "the moon"], answer: 0, category: "movies", difficulty: "easy" },
   { question: "What color pill does Neo take in The Matrix?", options: ["Blue", "Green", "Red", "Yellow"], answer: 2, category: "movies", difficulty: "easy" },
@@ -46,8 +80,18 @@ const questions = [
   { question: "Which movie has the tagline 'Just keep swimming'?", options: ["Shark Tale", "Finding Nemo", "The Little Mermaid", "Moana"], answer: 1, category: "movies", difficulty: "easy" },
   { question: "What is the name of the toy cowboy in Toy Story?", options: ["Buzz", "Woody", "Rex", "Hamm"], answer: 1, category: "movies", difficulty: "easy" },
   { question: "Which MCU movie came first?", options: ["Iron Man", "Thor", "Captain America", "The Incredible Hulk"], answer: 0, category: "movies", difficulty: "easy" },
+  { question: "What is the name of Simba's father in The Lion King?", options: ["Scar", "Mufasa", "Pumba", "Rafiki"], answer: 1, category: "movies", difficulty: "easy" },
+  { question: "Finish the quote: 'May the ___ be with you'", options: ["force", "power", "light", "luck"], answer: 0, category: "movies", difficulty: "easy" },
+  { question: "What animated movie features a rat who wants to be a chef?", options: ["Bee Movie", "Antz", "Ratatouille", "A Bug's Life"], answer: 2, category: "movies", difficulty: "easy" },
+  { question: "What is the name of the ogre in Shrek?", options: ["Donkey", "Shrek", "Lord Farquaad", "Puss"], answer: 1, category: "movies", difficulty: "easy" },
+  { question: "Which superhero is known as the Man of Steel?", options: ["Batman", "Iron Man", "Superman", "Thor"], answer: 2, category: "movies", difficulty: "easy" },
+  { question: "What movie features a fish looking for his son?", options: ["Shark Tale", "Finding Dory", "Finding Nemo", "The Little Mermaid"], answer: 2, category: "movies", difficulty: "easy" },
+  { question: "Finish the quote: 'You had me at ___'", options: ["hello", "goodbye", "yes", "please"], answer: 0, category: "movies", difficulty: "easy" },
+  { question: "What is the name of the school in Harry Potter?", options: ["Beauxbatons", "Durmstrang", "Hogwarts", "Ilvermorny"], answer: 2, category: "movies", difficulty: "easy" },
+  { question: "Which movie features a giant ship hitting an iceberg?", options: ["The Poseidon Adventure", "Titanic", "Waterworld", "The Perfect Storm"], answer: 1, category: "movies", difficulty: "easy" },
+  { question: "What color is the Hulk?", options: ["Blue", "Red", "Yellow", "Green"], answer: 3, category: "movies", difficulty: "easy" },
 
-  // MOVIES - Medium
+  // Movies - Medium
   { question: "Who directed The Dark Knight?", options: ["Zack Snyder", "Christopher Nolan", "Tim Burton", "Joel Schumacher"], answer: 1, category: "movies", difficulty: "medium" },
   { question: "What film won Best Picture at the 2020 Oscars?", options: ["1917", "Joker", "Once Upon a Time in Hollywood", "Parasite"], answer: 3, category: "movies", difficulty: "medium" },
   { question: "Complete the quote: 'Why so ___?' — The Dark Knight", options: ["angry", "serious", "sad", "quiet"], answer: 1, category: "movies", difficulty: "medium" },
@@ -58,8 +102,18 @@ const questions = [
   { question: "Finish the quote: 'You can't handle the ___!'", options: ["pressure", "heat", "truth", "pain"], answer: 2, category: "movies", difficulty: "medium" },
   { question: "Which movie features a character named Tyler Durden?", options: ["Se7en", "The Game", "Fight Club", "Zodiac"], answer: 2, category: "movies", difficulty: "medium" },
   { question: "What is the name of the spaceship in Alien?", options: ["Discovery", "Nostromo", "Sulaco", "Prometheus"], answer: 1, category: "movies", difficulty: "medium" },
+  { question: "What is the 2nd movie in the Fast and Furious franchise called?", options: ["Fast and Furious 2", "2 Fast 2 Furious", "Faster", "Fast Five"], answer: 1, category: "movies", difficulty: "medium" },
+  { question: "Finish the quote: 'I am Groot' — who says this?", options: ["Rocket", "Star-Lord", "Groot", "Drax"], answer: 2, category: "movies", difficulty: "medium" },
+  { question: "Which movie features the fictional country of Wakanda?", options: ["Captain America", "Thor", "Black Panther", "Avengers"], answer: 2, category: "movies", difficulty: "medium" },
+  { question: "Who played Katniss Everdeen in The Hunger Games?", options: ["Emma Stone", "Jennifer Lawrence", "Shailene Woodley", "Emma Watson"], answer: 1, category: "movies", difficulty: "medium" },
+  { question: "What is the 3rd movie in the Lord of the Rings trilogy?", options: ["The Two Towers", "Return of the King", "Fellowship Extended", "Battle of Mordor"], answer: 1, category: "movies", difficulty: "medium" },
+  { question: "Complete the quote: 'You is kind, you is smart, you is ___'", options: ["brave", "loved", "important", "special"], answer: 2, category: "movies", difficulty: "medium" },
+  { question: "Who directed Avengers: Endgame?", options: ["Joss Whedon", "James Gunn", "The Russo Brothers", "Jon Favreau"], answer: 2, category: "movies", difficulty: "medium" },
+  { question: "What movie features a character named Hannibal Lecter?", options: ["Seven", "Psycho", "Silence of the Lambs", "American Psycho"], answer: 2, category: "movies", difficulty: "medium" },
+  { question: "Which movie is set on the planet Pandora?", options: ["Interstellar", "Gravity", "Avatar", "The Martian"], answer: 2, category: "movies", difficulty: "medium" },
+  { question: "Finish the quote: 'Keep your friends close but your enemies ___'", options: ["closer", "away", "afraid", "watching"], answer: 0, category: "movies", difficulty: "medium" },
 
-  // MOVIES - Hard
+  // Movies - Hard
   { question: "Who composed the score for Interstellar?", options: ["John Williams", "Hans Zimmer", "Howard Shore", "Danny Elfman"], answer: 1, category: "movies", difficulty: "hard" },
   { question: "What is the 3rd film in the Godfather franchise called?", options: ["The Godfather Part III", "The Godfather Returns", "The Godfather Legacy", "The Godfather Final"], answer: 0, category: "movies", difficulty: "hard" },
   { question: "Complete the quote: 'Get busy living or get busy ___' — Shawshank Redemption", options: ["dying", "working", "fighting", "running"], answer: 0, category: "movies", difficulty: "hard" },
@@ -70,8 +124,20 @@ const questions = [
   { question: "Which director has a cameo in almost all of his own films?", options: ["Quentin Tarantino", "Alfred Hitchcock", "Martin Scorsese", "Both A and B"], answer: 3, category: "movies", difficulty: "hard" },
   { question: "What is the name of the 3rd Pirates of the Caribbean film?", options: ["Dead Man's Chest", "At World's End", "On Stranger Tides", "Dead Men Tell No Tales"], answer: 1, category: "movies", difficulty: "hard" },
   { question: "Complete the quote: 'I am your ___' — Star Wars Empire Strikes Back", options: ["master", "enemy", "father", "creator"], answer: 2, category: "movies", difficulty: "hard" },
+  { question: "What film has the most Oscars ever won?", options: ["Titanic", "Ben-Hur", "Lord of the Rings Return of the King", "Both A and C"], answer: 3, category: "movies", difficulty: "hard" },
+  { question: "Finish the quote: 'After all this time?' '___' — Harry Potter", options: ["Always", "Forever", "Never", "Still"], answer: 0, category: "movies", difficulty: "hard" },
+  { question: "What was the original ending of the movie 'Grease' supposed to be?", options: ["Sandy dies", "Danny moves away", "They break up", "Sandy flies away alone"], answer: 3, category: "movies", difficulty: "hard" },
+  { question: "Who directed Schindler's List?", options: ["Martin Scorsese", "Francis Ford Coppola", "Steven Spielberg", "Sidney Lumet"], answer: 2, category: "movies", difficulty: "hard" },
+  { question: "What is the 3rd film in the Back to the Future franchise?", options: ["Back to the Future III", "Back to the West", "Back Again", "Future III"], answer: 0, category: "movies", difficulty: "hard" },
+  { question: "Complete the quote: 'Elementary, my dear ___'", options: ["Holmes", "Watson", "Lestrade", "Hudson"], answer: 1, category: "movies", difficulty: "hard" },
+  { question: "What movie features a character who sees dead people?", options: ["The Others", "Poltergeist", "The Sixth Sense", "Ghost"], answer: 2, category: "movies", difficulty: "hard" },
+  { question: "Who played the villain Thanos in Avengers Infinity War?", options: ["Ron Perlman", "Vin Diesel", "Josh Brolin", "Dave Bautista"], answer: 2, category: "movies", difficulty: "hard" },
+  { question: "What film series features a character named John Wick?", options: ["The Expendables", "John Wick", "Taken", "Sicario"], answer: 1, category: "movies", difficulty: "hard" },
+  { question: "Finish the quote: 'You talkin' to me?' — from which film?", options: ["Goodfellas", "Scarface", "Taxi Driver", "The Godfather"], answer: 2, category: "movies", difficulty: "hard" },
 
-  // SPORTS - Easy
+  // ─── SPORTS ────────────────────────────────────────────────────────────────
+
+  // Sports - Easy
   { question: "Who won the 2022 FIFA World Cup?", options: ["France", "Brazil", "Argentina", "Morocco"], answer: 2, category: "sports", difficulty: "easy" },
   { question: "How many players are on a basketball team on the court?", options: ["4", "5", "6", "7"], answer: 1, category: "sports", difficulty: "easy" },
   { question: "In which sport would you perform a slam dunk?", options: ["Volleyball", "Tennis", "Basketball", "Handball"], answer: 2, category: "sports", difficulty: "easy" },
@@ -79,11 +145,21 @@ const questions = [
   { question: "What sport is played at Wimbledon?", options: ["Cricket", "Badminton", "Squash", "Tennis"], answer: 3, category: "sports", difficulty: "easy" },
   { question: "How many players are in a standard soccer team?", options: ["9", "10", "11", "12"], answer: 2, category: "sports", difficulty: "easy" },
   { question: "In which sport do you score a hat trick?", options: ["Basketball", "Baseball", "Soccer", "All of these"], answer: 3, category: "sports", difficulty: "easy" },
-  { question: "What country invented basketball?", options: ["USA", "Canada", "UK", "Australia"], answer: 0, category: "sports", difficulty: "easy" },
+  { question: "What country invented basketball?", options: ["USA", "Canada", "UK", "Australia"], answer: 1, category: "sports", difficulty: "easy" },
   { question: "How many rings are on the Olympic flag?", options: ["3", "4", "5", "6"], answer: 2, category: "sports", difficulty: "easy" },
   { question: "What is the maximum score in a single game of bowling?", options: ["200", "250", "300", "350"], answer: 2, category: "sports", difficulty: "easy" },
+  { question: "What sport uses a puck?", options: ["Lacrosse", "Field Hockey", "Ice Hockey", "Polo"], answer: 2, category: "sports", difficulty: "easy" },
+  { question: "How many points is a three-pointer worth in basketball?", options: ["2", "3", "4", "5"], answer: 1, category: "sports", difficulty: "easy" },
+  { question: "What is the national sport of Japan?", options: ["Judo", "Karate", "Sumo", "Kendo"], answer: 2, category: "sports", difficulty: "easy" },
+  { question: "How many holes are on a standard golf course?", options: ["9", "12", "18", "24"], answer: 2, category: "sports", difficulty: "easy" },
+  { question: "What color is the center of an archery target?", options: ["Red", "Blue", "Black", "Yellow"], answer: 3, category: "sports", difficulty: "easy" },
+  { question: "Which country hosts the Tour de France?", options: ["Italy", "Spain", "Belgium", "France"], answer: 3, category: "sports", difficulty: "easy" },
+  { question: "What sport features a serve, rally and spike?", options: ["Tennis", "Badminton", "Volleyball", "Squash"], answer: 2, category: "sports", difficulty: "easy" },
+  { question: "How long is a standard Olympic swimming pool?", options: ["25m", "50m", "75m", "100m"], answer: 1, category: "sports", difficulty: "easy" },
+  { question: "What is the term for a score of zero in tennis?", options: ["Nil", "Zero", "Love", "Zip"], answer: 2, category: "sports", difficulty: "easy" },
+  { question: "How many players are on a baseball team?", options: ["7", "8", "9", "10"], answer: 2, category: "sports", difficulty: "easy" },
 
-  // SPORTS - Medium
+  // Sports - Medium
   { question: "Who holds the record for most NBA championships?", options: ["LeBron James", "Michael Jordan", "Bill Russell", "Kareem Abdul-Jabbar"], answer: 2, category: "sports", difficulty: "medium" },
   { question: "Which country has won the most FIFA World Cups?", options: ["Germany", "Argentina", "Italy", "Brazil"], answer: 3, category: "sports", difficulty: "medium" },
   { question: "How long is a marathon in kilometers?", options: ["40km", "41km", "42.195km", "43km"], answer: 2, category: "sports", difficulty: "medium" },
@@ -94,11 +170,20 @@ const questions = [
   { question: "What is the diameter of a basketball hoop in inches?", options: ["16", "18", "20", "22"], answer: 1, category: "sports", difficulty: "medium" },
   { question: "In golf what term is used for two strokes under par?", options: ["Birdie", "Eagle", "Albatross", "Bogey"], answer: 1, category: "sports", difficulty: "medium" },
   { question: "How many Grand Slam tournaments are there in tennis?", options: ["2", "3", "4", "5"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "What is the nickname of the New Zealand rugby team?", options: ["The Wallabies", "The Springboks", "The All Blacks", "The Lions"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "How many players are on a rugby union team?", options: ["13", "14", "15", "16"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "Which country has won the most Olympic gold medals in swimming?", options: ["Australia", "China", "Russia", "USA"], answer: 3, category: "sports", difficulty: "medium" },
+  { question: "What is the name of the trophy awarded to the winner of the NBA Finals?", options: ["O'Brien Trophy", "Larry O'Brien Trophy", "NBA Cup", "Championship Cup"], answer: 1, category: "sports", difficulty: "medium" },
+  { question: "In what sport would you find a 'butterfly stroke'?", options: ["Rowing", "Swimming", "Synchronized Swimming", "Water Polo"], answer: 1, category: "sports", difficulty: "medium" },
+  { question: "How many points is a field goal worth in American football?", options: ["1", "2", "3", "6"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "Which athlete has won the most Olympic medals ever?", options: ["Carl Lewis", "Mark Spitz", "Michael Phelps", "Usain Bolt"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "What sport is Tiger Woods famous for?", options: ["Tennis", "Swimming", "Golf", "Athletics"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "How many players are on a hockey team on the ice?", options: ["4", "5", "6", "7"], answer: 2, category: "sports", difficulty: "medium" },
+  { question: "What is the term for three strikes in a row in bowling?", options: ["Spare", "Perfect", "Turkey", "Triple"], answer: 2, category: "sports", difficulty: "medium" },
 
-  // SPORTS - Hard
+  // Sports - Hard
   { question: "Who won the first ever FIFA World Cup in 1930?", options: ["Brazil", "Argentina", "Uruguay", "Italy"], answer: 2, category: "sports", difficulty: "hard" },
   { question: "How many times has Messi won the Ballon d'Or?", options: ["6", "7", "8", "9"], answer: 2, category: "sports", difficulty: "hard" },
-  { question: "What is the distance of a standard Olympic swimming pool in meters?", options: ["25m", "50m", "75m", "100m"], answer: 1, category: "sports", difficulty: "hard" },
   { question: "Who holds the record for most Grand Slam titles in men's tennis?", options: ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"], answer: 2, category: "sports", difficulty: "hard" },
   { question: "How many players are on a volleyball team on the court?", options: ["4", "5", "6", "7"], answer: 2, category: "sports", difficulty: "hard" },
   { question: "What country has won the most Olympic gold medals in history?", options: ["Russia", "China", "Germany", "USA"], answer: 3, category: "sports", difficulty: "hard" },
@@ -106,8 +191,21 @@ const questions = [
   { question: "In which city were the first modern Olympic Games held?", options: ["Rome", "Paris", "Athens", "London"], answer: 2, category: "sports", difficulty: "hard" },
   { question: "How many stitches are on a standard baseball?", options: ["98", "108", "118", "128"], answer: 1, category: "sports", difficulty: "hard" },
   { question: "Who scored the famous Hand of God goal?", options: ["Pele", "Zidane", "Maradona", "Ronaldo"], answer: 2, category: "sports", difficulty: "hard" },
+  { question: "What is the length of a standard Olympic running track in meters?", options: ["300m", "350m", "400m", "500m"], answer: 2, category: "sports", difficulty: "hard" },
+  { question: "Who was the first athlete to run a sub-4-minute mile?", options: ["Jim Ryun", "Roger Bannister", "Sebastian Coe", "Herb Elliott"], answer: 1, category: "sports", difficulty: "hard" },
+  { question: "How many points is a safety worth in American football?", options: ["1", "2", "3", "6"], answer: 1, category: "sports", difficulty: "hard" },
+  { question: "What is the maximum weight for a boxer in the heavyweight division?", options: ["No limit", "120kg", "110kg", "100kg"], answer: 0, category: "sports", difficulty: "hard" },
+  { question: "How many games are in a full NBA regular season for each team?", options: ["72", "78", "82", "86"], answer: 2, category: "sports", difficulty: "hard" },
+  { question: "In which year did Michael Jordan first win an NBA championship?", options: ["1989", "1990", "1991", "1992"], answer: 2, category: "sports", difficulty: "hard" },
+  { question: "What is the name of the trophy given to the winner of the FIFA World Cup?", options: ["Jules Rimet Trophy", "FIFA Cup", "World Cup Trophy", "Golden Trophy"], answer: 0, category: "sports", difficulty: "hard" },
+  { question: "How many substitutions are allowed in a standard soccer match?", options: ["3", "4", "5", "6"], answer: 2, category: "sports", difficulty: "hard" },
+  { question: "What is the diameter of a standard basketball in inches?", options: ["8.5", "9", "9.4", "9.8"], answer: 2, category: "sports", difficulty: "hard" },
+  { question: "Who holds the world record for the 100m sprint as of 2025?", options: ["Justin Gatlin", "Tyson Gay", "Asafa Powell", "Usain Bolt"], answer: 3, category: "sports", difficulty: "hard" },
+  { question: "How many players are in a water polo team in the water?", options: ["5", "6", "7", "8"], answer: 2, category: "sports", difficulty: "hard" },
 
-  // VIDEO GAMES - Easy
+  // ─── VIDEO GAMES ───────────────────────────────────────────────────────────
+
+  // Video Games - Easy
   { question: "What is the best selling video game of all time?", options: ["GTA V", "Minecraft", "Tetris", "Wii Sports"], answer: 1, category: "videogames", difficulty: "easy" },
   { question: "What company makes the PlayStation?", options: ["Microsoft", "Nintendo", "Sony", "Sega"], answer: 2, category: "videogames", difficulty: "easy" },
   { question: "What is the name of the main character in The Legend of Zelda?", options: ["Zelda", "Link", "Ganon", "Navi"], answer: 1, category: "videogames", difficulty: "easy" },
@@ -118,8 +216,18 @@ const questions = [
   { question: "Which game has you building and surviving with blocks?", options: ["Roblox", "Terraria", "Minecraft", "Fortnite"], answer: 2, category: "videogames", difficulty: "easy" },
   { question: "What is the name of Link's horse in Zelda Ocarina of Time?", options: ["Epona", "Roach", "Shadowmere", "Agro"], answer: 0, category: "videogames", difficulty: "easy" },
   { question: "What game franchise features Nathan Drake?", options: ["Tomb Raider", "Uncharted", "The Last of Us", "God of War"], answer: 1, category: "videogames", difficulty: "easy" },
+  { question: "What is the name of Mario's dinosaur companion?", options: ["Birdo", "Koopa", "Yoshi", "Toad"], answer: 2, category: "videogames", difficulty: "easy" },
+  { question: "What is the main goal in Pac-Man?", options: ["Shoot enemies", "Eat dots and avoid ghosts", "Collect coins", "Build a maze"], answer: 1, category: "videogames", difficulty: "easy" },
+  { question: "What game series features the character Lara Croft?", options: ["Uncharted", "Prince of Persia", "Tomb Raider", "Assassin's Creed"], answer: 2, category: "videogames", difficulty: "easy" },
+  { question: "What console is Mario primarily associated with?", options: ["PlayStation", "Xbox", "Nintendo", "Sega"], answer: 2, category: "videogames", difficulty: "easy" },
+  { question: "What does HP stand for in RPG games?", options: ["High Power", "Hit Points", "Hero Points", "Health Pack"], answer: 1, category: "videogames", difficulty: "easy" },
+  { question: "Which game has you dropping into an island and being the last one standing?", options: ["Apex Legends", "Call of Duty", "Fortnite", "Warzone"], answer: 2, category: "videogames", difficulty: "easy" },
+  { question: "What is the name of the villain in the Mario franchise?", options: ["Wario", "Bowser", "Koopa", "Kamek"], answer: 1, category: "videogames", difficulty: "easy" },
+  { question: "What game features creepers that explode?", options: ["Terraria", "Fortnite", "Roblox", "Minecraft"], answer: 3, category: "videogames", difficulty: "easy" },
+  { question: "What company made the Xbox?", options: ["Sony", "Nintendo", "Microsoft", "Sega"], answer: 2, category: "videogames", difficulty: "easy" },
+  { question: "In Pokemon what type is Pikachu?", options: ["Fire", "Water", "Grass", "Electric"], answer: 3, category: "videogames", difficulty: "easy" },
 
-  // VIDEO GAMES - Medium
+  // Video Games - Medium
   { question: "What is the name of the ghost companion in Destiny?", options: ["Cortana", "Ghost", "Dinklebot", "Navi"], answer: 1, category: "videogames", difficulty: "medium" },
   { question: "Which game studio made The Witcher series?", options: ["Bethesda", "CD Projekt Red", "Rockstar", "Ubisoft"], answer: 1, category: "videogames", difficulty: "medium" },
   { question: "What is the max level in the original World of Warcraft?", options: ["50", "60", "70", "80"], answer: 1, category: "videogames", difficulty: "medium" },
@@ -130,20 +238,42 @@ const questions = [
   { question: "In Dark Souls what happens when you die?", options: ["You lose all progress", "You respawn at last bonfire and lose souls", "Game over", "You lose your equipment"], answer: 1, category: "videogames", difficulty: "medium" },
   { question: "What game popularized the battle royale genre?", options: ["Fortnite", "PUBG", "Apex Legends", "H1Z1"], answer: 1, category: "videogames", difficulty: "medium" },
   { question: "Which company developed Overwatch?", options: ["EA", "Activision", "Blizzard", "Ubisoft"], answer: 2, category: "videogames", difficulty: "medium" },
+  { question: "What is the name of the 3rd Halo game?", options: ["Halo 2", "Halo 3", "Halo CE", "Halo Reach"], answer: 1, category: "videogames", difficulty: "medium" },
+  { question: "What is the starting town in the original Pokemon Red and Blue?", options: ["Cerulean City", "Viridian City", "Pewter City", "Pallet Town"], answer: 3, category: "videogames", difficulty: "medium" },
+  { question: "Which game features a character named Kratos?", options: ["Halo", "Devil May Cry", "God of War", "Dante's Inferno"], answer: 2, category: "videogames", difficulty: "medium" },
+  { question: "What is the real name of the hero in the Zelda franchise?", options: ["Zelda", "Link", "Hero of Time", "Hyrule"], answer: 1, category: "videogames", difficulty: "medium" },
+  { question: "What is the 3rd installment in the Assassin's Creed franchise?", options: ["Assassin's Creed II", "Brotherhood", "Revelations", "Assassin's Creed III"], answer: 3, category: "videogames", difficulty: "medium" },
+  { question: "Which game has the tagline 'A Thief's End'?", options: ["Uncharted 3", "Uncharted 4", "Uncharted 5", "The Last of Us"], answer: 1, category: "videogames", difficulty: "medium" },
+  { question: "What is the name of the AI in the Halo franchise?", options: ["GLaDOS", "EDI", "Cortana", "SAM"], answer: 2, category: "videogames", difficulty: "medium" },
+  { question: "In which game do you play as a Vault Dweller?", options: ["The Elder Scrolls", "Fallout", "Mass Effect", "Borderlands"], answer: 1, category: "videogames", difficulty: "medium" },
+  { question: "What is the name of the 3rd Call of Duty game?", options: ["Call of Duty 2", "Call of Duty 3", "Modern Warfare", "World at War"], answer: 1, category: "videogames", difficulty: "medium" },
+  { question: "Which battle royale game features legends with special abilities?", options: ["PUBG", "Fortnite", "Apex Legends", "Warzone"], answer: 2, category: "videogames", difficulty: "medium" },
 
-  // VIDEO GAMES - Hard
+  // Video Games - Hard
   { question: "What was the original name of Street Fighter II's Guile's stage theme?", options: ["Go Home and Be a Family Man", "Sonic Boom", "Air Force Base", "Flash Kick"], answer: 0, category: "videogames", difficulty: "hard" },
   { question: "Which game has the easter egg called 'The Cow Level'?", options: ["Diablo", "Diablo II", "Diablo III", "All of them"], answer: 3, category: "videogames", difficulty: "hard" },
   { question: "What is the name of the 3rd game in the Dark Souls franchise?", options: ["Dark Souls II", "Bloodborne", "Dark Souls III", "Elden Ring"], answer: 2, category: "videogames", difficulty: "hard" },
-  { question: "Who is the final boss in the original Donkey Kong?", options: ["King K Rool", "Donkey Kong", "Diddy Kong", "There is no final boss"], answer: 1, category: "videogames", difficulty: "hard" },
+  { question: "Who is the final boss in the original Donkey Kong arcade game?", options: ["King K Rool", "Donkey Kong", "Diddy Kong", "There is no final boss"], answer: 1, category: "videogames", difficulty: "hard" },
   { question: "What does NPE stand for in gaming?", options: ["Non Playable Entity", "New Player Experience", "Non Player Enemy", "Neutral Playing Environment"], answer: 1, category: "videogames", difficulty: "hard" },
-  { question: "In which game can you find the developer room known as Cow Level?", options: ["World of Warcraft", "Diablo II", "Starcraft", "Overwatch"], answer: 1, category: "videogames", difficulty: "hard" },
   { question: "What was the first video game to feature a save system?", options: ["Zelda", "Metroid", "Dragon Quest", "Final Fantasy"], answer: 2, category: "videogames", difficulty: "hard" },
   { question: "Which fighting game introduced the concept of Fatalities?", options: ["Street Fighter", "Mortal Kombat", "Tekken", "Killer Instinct"], answer: 1, category: "videogames", difficulty: "hard" },
   { question: "What is the name of the 3rd installment in the Half Life series?", options: ["Half Life 3", "Half Life Alyx", "Half Life Episode 3", "It does not exist"], answer: 3, category: "videogames", difficulty: "hard" },
   { question: "In what year was the first Pokemon game released in Japan?", options: ["1994", "1995", "1996", "1997"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What is the name of the final boss in the original Super Mario Bros?", options: ["Koopa", "Kamek", "Bowser", "King Koopa"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What is the name of the developer of the Dark Souls series?", options: ["Capcom", "Bandai Namco", "FromSoftware", "Square Enix"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What was the first ever commercially sold video game?", options: ["Pong", "Space Invaders", "Atari", "Computer Space"], answer: 3, category: "videogames", difficulty: "hard" },
+  { question: "How many games are in the mainline Final Fantasy series as of 2024?", options: ["14", "15", "16", "17"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What is the name of the 3rd Uncharted game?", options: ["Among Thieves", "Drake's Fortune", "Drake's Deception", "A Thief's End"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "Which game studio created Red Dead Redemption?", options: ["Ubisoft", "Naughty Dog", "Rockstar Games", "Bethesda"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What is the name of the AI villain in Portal?", options: ["HAL 9000", "SHODAN", "GLaDOS", "Skynet"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What is the 3rd game in the Bioshock franchise?", options: ["Bioshock 2", "Bioshock Rapture", "Bioshock Infinite", "Bioshock Underground"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "In what game would you find the 'Konami Code'?", options: ["Street Fighter", "Mega Man", "Contra", "Double Dragon"], answer: 2, category: "videogames", difficulty: "hard" },
+  { question: "What is the name of the city in the original Bioshock?", options: ["Columbia", "Rapture", "Neptune", "Atlas"], answer: 1, category: "videogames", difficulty: "hard" },
+  { question: "Which game was the first to use motion capture technology?", options: ["Mortal Kombat", "Virtua Fighter", "Street Fighter II", "Tekken"], answer: 0, category: "videogames", difficulty: "hard" },
 
-  // POP CULTURE - Easy
+  // ─── POP CULTURE ───────────────────────────────────────────────────────────
+
+  // Pop Culture - Easy
   { question: "Who is known as the Queen of Pop?", options: ["Beyonce", "Rihanna", "Madonna", "Lady Gaga"], answer: 2, category: "popculture", difficulty: "easy" },
   { question: "What show features characters called Ross, Rachel, Monica, Chandler, Joey and Phoebe?", options: ["How I Met Your Mother", "Seinfeld", "Friends", "The Office"], answer: 2, category: "popculture", difficulty: "easy" },
   { question: "What social media platform is known for short videos?", options: ["Instagram", "Twitter", "TikTok", "Snapchat"], answer: 2, category: "popculture", difficulty: "easy" },
@@ -152,13 +282,21 @@ const questions = [
   { question: "What show is set in Hawkins Indiana and features the Upside Down?", options: ["Dark", "The OA", "Stranger Things", "Dark Matter"], answer: 2, category: "popculture", difficulty: "easy" },
   { question: "Who played Harry Potter in the film series?", options: ["Rupert Grint", "Daniel Radcliffe", "Tom Felton", "Eddie Redmayne"], answer: 1, category: "popculture", difficulty: "easy" },
   { question: "What does LOL stand for?", options: ["Lots of Love", "Laugh Out Loud", "League of Legends", "Both A and B"], answer: 3, category: "popculture", difficulty: "easy" },
-  { question: "What color is the Incredible Hulk?", options: ["Blue", "Red", "Yellow", "Green"], answer: 3, category: "popculture", difficulty: "easy" },
   { question: "Which artist released the album Thriller?", options: ["Prince", "Michael Jackson", "James Brown", "Stevie Wonder"], answer: 1, category: "popculture", difficulty: "easy" },
+  { question: "What is the name of the coffee shop in Friends?", options: ["Starbucks", "Central Perk", "The Grind", "Java City"], answer: 1, category: "popculture", difficulty: "easy" },
+  { question: "Finish the lyric: 'Baby shark doo doo doo doo doo doo, Baby ___'", options: ["fish", "shark", "whale", "dolphin"], answer: 1, category: "popculture", difficulty: "easy" },
+  { question: "What app do people use to send disappearing photos?", options: ["Instagram", "TikTok", "Snapchat", "WhatsApp"], answer: 2, category: "popculture", difficulty: "easy" },
+  { question: "Who plays Eleven in Stranger Things?", options: ["Sadie Sink", "Millie Bobby Brown", "Natalia Dyer", "Maya Hawke"], answer: 1, category: "popculture", difficulty: "easy" },
+  { question: "What is the name of the famous boy wizard series by J.K. Rowling?", options: ["The Hobbit", "Narnia", "Harry Potter", "Percy Jackson"], answer: 2, category: "popculture", difficulty: "easy" },
+  { question: "Which rapper is known as Slim Shady?", options: ["Jay-Z", "Kanye West", "Eminem", "Drake"], answer: 2, category: "popculture", difficulty: "easy" },
+  { question: "What show features the Dunder Mifflin paper company?", options: ["Parks and Recreation", "Brooklyn Nine-Nine", "The Office", "Community"], answer: 2, category: "popculture", difficulty: "easy" },
+  { question: "Finish the lyric: 'We will, we will ___'", options: ["fight you", "shake you", "rock you", "beat you"], answer: 2, category: "popculture", difficulty: "easy" },
+  { question: "What is the name of the streaming service that made Squid Game?", options: ["HBO", "Disney+", "Amazon Prime", "Netflix"], answer: 3, category: "popculture", difficulty: "easy" },
+  { question: "Who is Beyonce's husband?", options: ["Kanye West", "Jay-Z", "Drake", "Future"], answer: 1, category: "popculture", difficulty: "easy" },
+  { question: "What does BTS stand for?", options: ["Behind The Scenes", "Better Than Sorry", "Bangtan Sonyeondan", "Boys That Sing"], answer: 2, category: "popculture", difficulty: "easy" },
 
-  // POP CULTURE - Medium
-  { question: "What Netflix show features a group of kids in a post apocalyptic world run by teens?", options: ["The 100", "The Society", "Outer Banks", "On My Block"], answer: 1, category: "popculture", difficulty: "medium" },
+  // Pop Culture - Medium
   { question: "Finish the lyric: 'Is this the real life? Is this just ___?' — Bohemian Rhapsody", options: ["a dream", "fantasy", "reality", "pretend"], answer: 1, category: "popculture", difficulty: "medium" },
-  { question: "What is the name of the coffee shop in Friends?", options: ["Starbucks", "Central Perk", "The Grind", "Java City"], answer: 1, category: "popculture", difficulty: "medium" },
   { question: "Who played Walter White in Breaking Bad?", options: ["Bob Odenkirk", "Aaron Paul", "Bryan Cranston", "Dean Norris"], answer: 2, category: "popculture", difficulty: "medium" },
   { question: "What does GOAT stand for in pop culture?", options: ["Greatest of All Time", "Good Old American Tradition", "Going Over All Things", "Greatest Overall Athlete"], answer: 0, category: "popculture", difficulty: "medium" },
   { question: "Which show features the phrase 'Winter is Coming'?", options: ["Vikings", "The Last Kingdom", "Game of Thrones", "House of the Dragon"], answer: 2, category: "popculture", difficulty: "medium" },
@@ -166,18 +304,40 @@ const questions = [
   { question: "What show features a chemistry teacher turned drug lord?", options: ["Narcos", "Ozark", "Breaking Bad", "Better Call Saul"], answer: 2, category: "popculture", difficulty: "medium" },
   { question: "Finish the lyric: 'Never gonna give you up, never gonna ___'", options: ["let you go", "say goodbye", "turn around", "let you down"], answer: 3, category: "popculture", difficulty: "medium" },
   { question: "What is the name of Beyonce's alter ego?", options: ["Nicki", "Sasha Fierce", "Lemonade", "Destiny"], answer: 1, category: "popculture", difficulty: "medium" },
+  { question: "What Netflix show features a group of kids in a post apocalyptic world run by teens?", options: ["The 100", "The Society", "Outer Banks", "On My Block"], answer: 1, category: "popculture", difficulty: "medium" },
+  { question: "What is the real name of rapper Drake?", options: ["Shawn Carter", "Marshall Mathers", "Aubrey Graham", "Onika Maraj"], answer: 2, category: "popculture", difficulty: "medium" },
+  { question: "Finish the lyric: 'I kissed a girl and I ___'", options: ["liked it", "loved it", "hated it", "regret it"], answer: 0, category: "popculture", difficulty: "medium" },
+  { question: "What show features the fictional town of Pawnee Indiana?", options: ["The Office", "Community", "Parks and Recreation", "Brooklyn Nine-Nine"], answer: 2, category: "popculture", difficulty: "medium" },
+  { question: "Which artist is known as the Weeknd?", options: ["Abel Tesfaye", "Frank Ocean", "The Dream", "Miguel"], answer: 0, category: "popculture", difficulty: "medium" },
+  { question: "What is the name of the bar in How I Met Your Mother?", options: ["MacLaren's", "Central Perk", "Paddy's Pub", "The Pie Hole"], answer: 0, category: "popculture", difficulty: "medium" },
+  { question: "Finish the lyric: 'Someone like ___ by Adele'", options: ["him", "her", "you", "them"], answer: 2, category: "popculture", difficulty: "medium" },
+  { question: "What show features the Peaky Blinders gang?", options: ["Boardwalk Empire", "Peaky Blinders", "Taboo", "Gangs of London"], answer: 1, category: "popculture", difficulty: "medium" },
+  { question: "What is the real name of rapper Cardi B?", options: ["Belcalis Almanzar", "Onika Maraj", "Melissa Forde", "Robyn Fenty"], answer: 0, category: "popculture", difficulty: "medium" },
+  { question: "Which K-pop group has members RM, Jin, Suga, J-Hope, Jimin, V and Jungkook?", options: ["Exo", "BlackPink", "BTS", "Twice"], answer: 2, category: "popculture", difficulty: "medium" },
+  { question: "Finish the lyric: 'Hello from the ___ side'", options: ["other", "dark", "bright", "far"], answer: 0, category: "popculture", difficulty: "medium" },
+  { question: "What is the name of the fictional high school in Glee?", options: ["Bayside High", "McKinley High", "West Beverly", "Shermer High"], answer: 1, category: "popculture", difficulty: "medium" },
 
-  // POP CULTURE - Hard
+  // Pop Culture - Hard
   { question: "What was the first tweet ever sent on Twitter?", options: ["Hello World", "just setting up my twttr", "This is Twitter", "Tweet tweet"], answer: 1, category: "popculture", difficulty: "hard" },
   { question: "Finish the lyric: 'I've got 99 problems but a ___ ain't one'", options: ["girl", "snitch", "hater", "witch"], answer: 1, category: "popculture", difficulty: "hard" },
-  { question: "What year did Instagram launch?", options: ["2008", "2009", "2010", "2011"], answer: 2, category: "popculture", difficulty: "hard" },
   { question: "Who created the TV show Black Mirror?", options: ["Ryan Murphy", "Charlie Brooker", "Vince Gilligan", "David Simon"], answer: 1, category: "popculture", difficulty: "hard" },
-  { question: "What is the real name of rapper Cardi B?", options: ["Belcalis Almanzar", "Onika Maraj", "Melissa Forde", "Robyn Fenty"], answer: 0, category: "popculture", difficulty: "hard" },
   { question: "What was the most watched Netflix show of all time as of 2023?", options: ["Stranger Things", "Money Heist", "Wednesday", "Squid Game"], answer: 3, category: "popculture", difficulty: "hard" },
   { question: "Finish the lyric: 'Cause the players gonna play play play and the haters gonna ___'", options: ["hate hate hate", "stay stay stay", "pray pray pray", "sway sway sway"], answer: 0, category: "popculture", difficulty: "hard" },
   { question: "What internet meme features a dog surrounded by fire saying 'This is fine'?", options: ["Doge", "Grumpy Cat", "Gunshow Comic Dog", "Success Kid"], answer: 2, category: "popculture", difficulty: "hard" },
   { question: "Who coined the term 'selfie'?", options: ["Kim Kardashian", "It originated on an Australian forum", "Paris Hilton", "MySpace users"], answer: 1, category: "popculture", difficulty: "hard" },
   { question: "What was the name of the first viral YouTube video?", options: ["Charlie Bit My Finger", "Evolution of Dance", "Me at the Zoo", "Numa Numa"], answer: 2, category: "popculture", difficulty: "hard" },
+  { question: "What is the name of the fictional band in the show Josie and the Pussycats?", options: ["The Pussycats", "Josie and Friends", "The Pussycat Dolls", "Josie and the Pussycats"], answer: 3, category: "popculture", difficulty: "hard" },
+  { question: "Finish the lyric: 'Cause I am a champion and ___ hear me roar'", options: ["let them", "you will", "they will", "make them"], answer: 1, category: "popculture", difficulty: "hard" },
+  { question: "What was the first country to legalize same-sex marriage?", options: ["Sweden", "Canada", "Netherlands", "Spain"], answer: 2, category: "popculture", difficulty: "hard" },
+  { question: "What is the real name of singer Lorde?", options: ["Ella Yelich-O'Connor", "Lorraine Davies", "Eleanor Watts", "Eliza Connor"], answer: 0, category: "popculture", difficulty: "hard" },
+  { question: "Finish the lyric: 'I took a pill in ___' — Mike Posner", options: ["Vegas", "Ibiza", "Miami", "LA"], answer: 1, category: "popculture", difficulty: "hard" },
+  { question: "What year did the first iPhone come out?", options: ["2005", "2006", "2007", "2008"], answer: 2, category: "popculture", difficulty: "hard" },
+  { question: "What is the real name of singer Post Malone?", options: ["Austin Post", "Austin Richard Post", "Richard Post", "Post Austin"], answer: 1, category: "popculture", difficulty: "hard" },
+  { question: "Which show holds the record for most Emmy wins ever?", options: ["The Sopranos", "Game of Thrones", "Succession", "Breaking Bad"], answer: 1, category: "popculture", difficulty: "hard" },
+  { question: "Finish the lyric: 'All the single ladies, all the single ladies, now put your ___'", options: ["feet up", "hair down", "hands up", "hands up"], answer: 2, category: "popculture", difficulty: "hard" },
+  { question: "What is the name of the fictional restaurant in The Bear?", options: ["The Original Beef", "The Bear", "Carmy's", "The Beef"], answer: 0, category: "popculture", difficulty: "hard" },
+  { question: "Who is the creator of the South Park animated series?", options: ["Seth MacFarlane", "Matt Groening", "Trey Parker and Matt Stone", "Mike Judge"], answer: 2, category: "popculture", difficulty: "hard" },
+  { question: "Finish the lyric: 'In the jungle the mighty jungle the lion ___'", options: ["sleeps tonight", "roars tonight", "hunts tonight", "reigns tonight"], answer: 0, category: "popculture", difficulty: "hard" },
 ];
 
 export { questions };
