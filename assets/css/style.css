@@ -351,18 +351,44 @@ select:hover {
 .option-btn{
   margin-bottom: 10px;
   width: min(500px, calc(100vw - 32px));
-  min-height: 30px;
+  min-height: 42px;
+  padding: 8px 18px;
+  border: 2px solid transparent;
   border-radius: 20px;
+  background-color: #f4f3ff;
   color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 180ms ease, background-color 180ms ease,
+    border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.option-btn:hover {
+  background-color: #dcd8ff;
+  border-color: #6c63ff;
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(108, 99, 255, 0.22);
+}
+
+.option-btn:focus-visible {
+  outline: 3px solid rgba(255, 107, 107, 0.65);
+  outline-offset: 3px;
 }
 
 .choosen-btn {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   width: min(500px, calc(100vw - 32px));
-  min-height: 30px;
-  background-color:chartreuse;
-  border: none;
+  min-height: 42px;
+  padding: 8px 18px;
+  background-color: #b8f05a;
+  border: 2px solid #82b52e;
   border-radius: 20px;
+  color: #172000;
+}
+
+.choosen-btn:hover {
+  background-color: #c9f879;
+  border-color: #6f9f20;
 }
 
 #restart{
